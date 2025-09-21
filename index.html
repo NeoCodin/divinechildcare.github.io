@@ -7,13 +7,13 @@
   <meta name="description" content="Divine Royal Children’s Academy provides high quality child care and education in Middletown, DE. We accept POC and offer multiple care programs." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body{margin:0;font-family:Inter,Arial,sans-serif;background:#e6f3ff;color:#111827;line-height:1.6}
+    body{margin:0;font-family:Inter,Arial,sans-serif;background:#cce7ff;color:#111827;line-height:1.6}
     header{background:#6d28d9;color:#fff;padding:1rem;text-align:center}
     h1{margin:0;font-size:1.8rem}
     .hero{background:#fbbf24;padding:2rem;text-align:center}
     .hero h2{margin:0;font-size:2rem;color:#111827}
     .container{width:min(1100px,92%);margin:2rem auto}
-    .programs,.contact,.gallery,.photos{margin-top:2rem}
+    .programs,.contact,.gallery{margin-top:2rem}
     .programs ul{list-style:none;padding:0}
     .programs li{margin:.5rem 0;padding:.5rem;background:#e5e7eb;border-radius:8px}
     .highlight{font-weight:bold;color:#6d28d9}
@@ -22,11 +22,6 @@
     footer{background:#111827;color:#f9fafb;text-align:center;padding:1rem;margin-top:2rem}
     .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
     .gallery-grid img{width:100%;height:auto;border-radius:10px}
-    .photo-uploader{margin:.75rem 0 1rem}
-    .btn-upload{display:inline-block;background:#6d28d9;color:#fff;padding:.6rem 1rem;border-radius:8px;cursor:pointer}
-    .photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .photos-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px}
-    @media(max-width:800px){.photos-grid{grid-template-columns:1fr 1fr}.photos-grid img{height:160px}}
   </style>
 </head>
 <body>
@@ -36,7 +31,7 @@
   </header>
 
   <section class="hero">
-    <h2>🎉 Grand Opening! 🎉</h2>
+    <h2>Welcome to Divine Royal Children’s Academy</h2>
     <p>We provide high quality child care and education — and we also accept <span class="highlight">POC</span>.</p>
   </section>
 
@@ -61,29 +56,13 @@
       </div>
     </section>
 
-    <section class="photos">
-      <h2>Photos</h2>
-      <p>Add your pictures below to preview, or replace the placeholder image URLs with your hosted photos on GitHub/Netlify.</p>
-      <div class="photo-uploader">
-        <label class="btn-upload">
-          <input id="upload" type="file" accept="image/*" multiple hidden>
-          Select Photos
-        </label>
-        <small>Preview only: files aren’t uploaded anywhere. To make them permanent online, add images to your repo (e.g., <code>/images</code>) and swap the URLs below.</small>
-      </div>
-      <div id="gallery" class="photos-grid">
-        <img src="https://via.placeholder.com/400x250.png?text=Uploaded+Photo+1" alt="Uploaded photo 1">
-        <img src="https://via.placeholder.com/400x250.png?text=Uploaded+Photo+2" alt="Uploaded photo 2">
-        <img src="https://via.placeholder.com/400x250.png?text=Uploaded+Photo+3" alt="Uploaded photo 3">
-      </div>
-    </section>
-
     <section class="contact">
       <div class="contact-info">
         <h2>Contact Us</h2>
         <p>📞 <a href="tel:3025430789">302-543-0789</a></p>
+        <p>✉️ <a href="mailto:Ihcdivinetouch@gmail.com">Ihcdivinetouch@gmail.com</a></p>
         <p>📍 256 Bucktail Dr, Middletown, DE 19709</p>
-        <p>For more information and enrollment, call today!</p>
+        <p>For more information and enrollment, call or email today!</p>
       </div>
     </section>
   </main>
@@ -91,25 +70,5 @@
   <footer>
     <p>© <script>document.write(new Date().getFullYear())</script> Divine Royal Children’s Academy. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      const input = document.getElementById('upload');
-      const gal = document.getElementById('gallery');
-      if(input && gal){
-        input.addEventListener('change', (e)=>{
-          const files = Array.from(e.target.files || []);
-          if(!files.length) return;
-          gal.innerHTML = '';
-          files.forEach(file=>{
-            const img = document.createElement('img');
-            img.alt = file.name;
-            img.src = URL.createObjectURL(file);
-            gal.appendChild(img);
-          });
-        });
-      }
-    });
-  </script>
 </body>
 </html>
