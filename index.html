@@ -76,8 +76,8 @@
         tagline: 'Loving, licensed home daycare in Delaware',
         phone: '(302) 543-0789',
         email: 'Ihcdivinetouch@gmail.com',
-        address: '256 Bucktail Drive, Middletown, DE 19709',
-        hours: 'Mon–Fri · 7:30a–5:30p',
+        address: 'Middletown, DE 19709',
+        hours: 'Mon–Fri · 6:00am–6:00pm',
       };
       for (const [k,v] of Object.entries(data)){
         document.querySelectorAll(`[data-fill="${k}"]`).forEach(el => el.textContent = v);
@@ -98,7 +98,7 @@
     "name": "Divine Royal Children's Academy",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "256 Bucktail Drive",
+      "streetAddress": " ",
       "addressLocality": "Middletown",
       "addressRegion": "DE",
       "postalCode": "19709"
@@ -193,7 +193,7 @@
           <h3>Hours</h3>
           <ul class="list">
             <li><b>Open:</b> <span data-fill="hours">Mon–Fri · 7:30a–5:30p</span></li>
-            <li><b>Location:</b> <span data-fill="address">256 Bucktail Drive, Middletown, DE 19709</span></li>
+            <li><b>Location:</b> <span data-fill="address">Middletown, DE 19709</span></li>
           </ul>
         </div>
         <div class="card feature">
