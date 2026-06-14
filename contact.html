@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact &amp; Tours – Divine Royal Children's Academy</title>
+  <meta name="description" content="Book a free tour of Divine Royal Children's Academy in Middletown, DE. Call (302) 543-0789 or send us a message — we'd love to meet your family." />
+  <meta name="theme-color" content="#54219b" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <div class="hero-wrap">
+      <div class="decor" aria-hidden="true">
+        <div class="f g" style="top:30%;left:6%;width:40px;height:40px;--d:10s;--r:-8deg"><svg><use href="#i-crown"/></svg></div>
+        <div class="f" style="top:46%;right:7%;width:34px;height:34px;--d:11s;--delay:.4s;--r:8deg"><svg><use href="#i-tiara"/></svg></div>
+      </div>
+      <section class="container page-hero">
+        <span class="eyebrow"><svg><use href="#i-crown"/></svg> Get in Touch</span>
+        <h1>Book Your Royal Tour</h1>
+        <p>We'd love to meet your family and show you our cozy space.</p>
+      </section>
+    </div>
+
+    <section class="container section" style="padding-top:0">
+      <div class="contact-grid">
+        <div class="card reveal" style="padding:1.7rem">
+          <h3 style="font-size:1.3rem;color:var(--brand-deep)">Send Us a Message</h3>
+          <form class="form" id="tourForm">
+            <div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" required placeholder="Jane Doe" /></div>
+            <div class="grid-2" style="gap:.9rem">
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required placeholder="you@email.com" /></div>
+              <div class="field"><label for="f-phone">Phone (optional)</label><input id="f-phone" name="phone" placeholder="(302) 000-0000" /></div>
+            </div>
+            <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Hi! I'd love to schedule a tour. My child is ___ old and we're hoping to start ___."></textarea></div>
+            <div style="display:flex;gap:.7rem;flex-wrap:wrap">
+              <button class="btn solid" type="submit"><svg><use href="#i-mail"/></svg> Send Message</button>
+              <a class="btn" href="tel:+13025430789"><svg><use href="#i-phone"/></svg> Call Instead</a>
+            </div>
+          </form>
+        </div>
+        <div class="card contact-info reveal" style="padding:1.7rem;transition-delay:.1s">
+          <h3 style="font-size:1.3rem;color:var(--brand-deep);margin-bottom:1rem">Quick Contact</h3>
+          <div class="row"><svg><use href="#i-phone"/></svg><div><b>Phone</b><br><a href="tel:+13025430789">(302) 543-0789</a></div></div>
+          <div class="row"><svg><use href="#i-mail"/></svg><div><b>Email</b><br><a href="mailto:Ihcdivinetouch@gmail.com">Ihcdivinetouch@gmail.com</a></div></div>
+          <div class="row"><svg><use href="#i-pin"/></svg><div><b>Location</b><br>Middletown, DE 19709</div></div>
+          <div class="row"><svg><use href="#i-clock"/></svg><div><b>Hours</b><br>Mon–Fri · 6:00am–6:00pm</div></div>
+          <div class="map"><iframe title="Map of Middletown, Delaware" src="https://www.google.com/maps?q=Middletown,DE&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
