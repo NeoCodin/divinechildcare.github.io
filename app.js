@@ -27,6 +27,8 @@ const SPRITE = `
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M9.6 16.2 4.8 11.4 6.2 10l3.4 3.4L17.8 5.2 19.2 6.6Z"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 6.5 7 .7-5.2 4.8 1.5 6.9L12 17.8 5.7 20.9l1.5-6.9L2 9.2l7-.7Z"/></symbol>
   <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4 0-9 2-9 6v2h18v-2c0-4-5-6-9-6Z"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
 </svg>`;
 
 /* ---- Header (nav links use page filenames) ---- */
@@ -75,6 +77,10 @@ const FOOTER = `
         <span><svg><use href="#i-shield"/></svg> DE OCCL Licensed</span>
         <span><svg><use href="#i-heart"/></svg> CPR &amp; First Aid</span>
         <span><svg><use href="#i-crown"/></svg> POC Welcome</span>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/profile.php?id=61591373723248" target="_blank" rel="noopener" aria-label="Divine Royal on Facebook"><svg><use href="#i-facebook"/></svg></a>
+        <a href="https://www.linkedin.com/in/peace-arousa-5893951a2" target="_blank" rel="noopener" aria-label="Divine Royal on LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
       </div>
     </div>
     <div>
