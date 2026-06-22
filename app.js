@@ -47,7 +47,7 @@ const HEADER = `
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Divine Royal Children's Academy home">
       <!-- LOGO: replace this .badge contents with <img src="logo.png" alt="..."> when ready -->
-      <span class="badge"><svg><use href="#i-crown"/></svg></span>
+      <span class="badge"><img src="images/logo-mark.png" alt="Divine Royal Children's Academy logo" /></span>
       <span class="name">Divine Royal<small>Children's Academy</small></span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
@@ -69,7 +69,7 @@ const FOOTER = `
 <footer>
   <div class="container foot">
     <div>
-      <div class="fbrand"><span class="badge"><svg><use href="#i-crown"/></svg></span><b>Divine Royal Children's Academy</b></div>
+      <div class="fbrand"><span class="badge"><img src="images/logo-mark.png" alt="Divine Royal Children's Academy logo" /></span><b>Divine Royal Children's Academy</b></div>
       <p style="max-width:42ch">A loving, licensed, family-owned home daycare in Middletown, Delaware — where every child is treated like royalty.</p>
       <div class="badges">
         <span><svg><use href="#i-shield"/></svg> DE OCCL Licensed</span>
