@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -26,14 +26,14 @@
       <section class="container page-hero">
         <span class="eyebrow"><svg><use href="#i-crown"/></svg> Our Royal Programs</span>
         <h1>Care Fit for a Little Royal</h1>
-        <p>Full-time, part-time, and after-school options. Ask about current openings by age.</p>
+        <p>Loving care for children <strong style="color:var(--gold-soft)">ages 0–12</strong> — full-time, part-time, before &amp; after school, and flexible scheduling. Ask about current openings by age.</p>
       </section>
     </div>
 
     <section class="container section" style="padding-top:0">
       <div class="grid-3">
         <article class="card room reveal">
-          <div class="ph"><svg class="crown"><use href="#i-crown"/></svg><img src="https://i.imgur.com/QZUgeGP.jpg" alt="Infant care" /><span class="age">6–18 mo</span></div>
+          <div class="ph"><svg class="crown"><use href="#i-crown"/></svg><img src="https://i.imgur.com/QZUgeGP.jpg" alt="Infant care" /><span class="age">0–18 mo</span></div>
           <div class="body"><h3>Gentle Routines</h3><p>Warm, responsive care aligned to your baby's rhythms. Tummy time, music, and plenty of snuggles.</p></div>
         </article>
         <article class="card room reveal" style="transition-delay:.1s">
@@ -44,6 +44,22 @@
           <div class="ph"><svg class="crown"><use href="#i-crown"/></svg><img src="https://i.imgur.com/tDQ4O6c.jpg" alt="Preschool program" /><span class="age">3–5 yrs</span></div>
           <div class="body"><h3>Ready for Kindergarten</h3><p>Letters &amp; sounds, numbers, social skills, and themed weekly activities to spark a love of learning.</p></div>
         </article>
+      </div>
+
+      <div class="card reveal" style="margin-top:1.5rem;padding:1.8rem;display:flex;gap:1.3rem;align-items:center;flex-wrap:wrap">
+        <div style="width:66px;height:66px;flex:none;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold-soft),var(--gold))"><svg style="width:34px;height:34px;fill:var(--brand-deep)"><use href="#i-clock"/></svg></div>
+        <div style="flex:1;min-width:260px">
+          <h3 style="color:var(--brand-deep);font-size:1.35rem;margin-bottom:.4rem">Flexible Drop-Off &amp; Pick-Up</h3>
+          <p style="color:var(--muted)">Life doesn't run on a fixed schedule — and neither do we. Drop off and pick up your child <b style="color:var(--brand-deep)">any time within our hours, Monday–Friday from 6:00am to 6:00pm</b>. Full-time, part-time, early mornings or late afternoons — whatever works for your family, for children of every age.</p>
+        </div>
+      </div>
+
+      <div class="card reveal" style="margin-top:1.2rem;padding:1.8rem;display:flex;gap:1.3rem;align-items:center;flex-wrap:wrap">
+        <div style="width:66px;height:66px;flex:none;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--brand),var(--brand-deep))"><svg style="width:34px;height:34px;fill:var(--gold-soft)"><use href="#i-book"/></svg></div>
+        <div style="flex:1;min-width:260px">
+          <h3 style="color:var(--brand-deep);font-size:1.35rem;margin-bottom:.4rem">Before &amp; After School Care</h3>
+          <p style="color:var(--muted)">Need coverage around the school day? We offer <b style="color:var(--brand-deep)">before- and after-school care</b> for school-age children — a warm place to start the morning and unwind in the afternoon, with snacks, play, and a hand with homework. It's all part of how we care for children of <b style="color:var(--brand-deep)">every age, from 0 to 12</b>.</p>
+        </div>
       </div>
     </section>
 
