@@ -5,7 +5,7 @@
 
 const PHONE_TEL = "+13025430789";
 const PHONE = "(302) 543-0789";
-const EMAIL = "Ihcdivinetouch@gmail.com";
+const EMAIL = "Divineroyalchildrensacademy@gmail.com";
 
 /* ---- SVG icon sprite (crowns, tiaras, icons) ---- */
 const SPRITE = `
